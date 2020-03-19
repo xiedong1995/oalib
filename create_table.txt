@@ -1,0 +1,13 @@
+CREATE TABLE `oalib` (
+  `periodical_id` int(10) unsigned NOT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `datetime` varchar(20) DEFAULT NULL,
+  `doi` varchar(50) DEFAULT NULL,
+  `views` varchar(255) DEFAULT NULL,
+  `downloads` varchar(255) DEFAULT NULL,
+  `full_link` varchar(255) DEFAULT NULL,
+  `title` text,
+  `authors` varchar(255) DEFAULT NULL,
+  `abstract` longtext,
+  PRIMARY KEY (`periodical_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8
